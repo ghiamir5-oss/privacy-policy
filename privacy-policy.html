@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialité - خربڨة و داما</title>
+  <meta name="description" content="Politique de confidentialité de l'application خربڨة و داما / Kharbga & Dama.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --surface: #fffaf1;
+      --surface-strong: #ffffff;
+      --ink: #241811;
+      --muted: #6f5e50;
+      --line: #d8c9b5;
+      --brand: #7b3f1d;
+      --brand-dark: #442210;
+      --accent: #0b6b57;
+      --warning: #9a5b00;
+      --warning-bg: #fff3cf;
+      --shadow: 0 18px 45px rgba(55, 35, 20, 0.13);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(123, 63, 29, 0.08), transparent 280px),
+        var(--bg);
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 56px;
+    }
+
+    header {
+      background: var(--brand-dark);
+      color: #fff8eb;
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #efcf9a;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    header p {
+      max-width: 780px;
+      margin: 16px 0 0;
+      color: #f2e4cf;
+      font-size: 1.05rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .meta-item {
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.08);
+      min-height: 78px;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: #efcf9a;
+      font-size: 0.82rem;
+      margin-bottom: 4px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+      margin-top: 22px;
+    }
+
+    nav {
+      position: sticky;
+      top: 16px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: 0 12px 30px rgba(55, 35, 20, 0.08);
+    }
+
+    nav h2 {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      color: var(--brand-dark);
+    }
+
+    nav a {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      text-decoration: none;
+      border-top: 1px solid rgba(216, 201, 181, 0.65);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    nav a:first-of-type {
+      border-top: 0;
+    }
+
+    section,
+    .notice {
+      background: var(--surface-strong);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 12px 30px rgba(55, 35, 20, 0.06);
+    }
+
+    .notice {
+      border-color: #e5be67;
+      background: var(--warning-bg);
+    }
+
+    .notice strong {
+      color: var(--warning);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--brand-dark);
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      color: var(--brand);
+      font-size: 1.1rem;
+    }
+
+    p,
+    ul {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .summary-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      background: #fffaf1;
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      background: #fffdf8;
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      color: var(--brand-dark);
+      background: #f4e6d1;
+      font-size: 0.92rem;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #e6f0ed;
+      color: #075945;
+      font-weight: 700;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .tag.warn {
+      background: #fff0c7;
+      color: #764300;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .contact-box div {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 12px;
+      background: #fffaf1;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 860px) {
+      .page {
+        width: min(100% - 20px, 1080px);
+        padding-top: 10px;
+      }
+
+      header {
+        padding: 24px;
+      }
+
+      .meta-grid,
+      .summary,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        display: block;
+      }
+
+      nav {
+        position: static;
+        margin-bottom: 16px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      header,
+      section,
+      .notice,
+      nav {
+        box-shadow: none;
+      }
+
+      nav {
+        display: none;
+      }
+
+      main {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Application mobile Android</p>
+      <h1>Politique de confidentialité</h1>
+      <p>
+        Cette politique explique comment l'application <strong dir="rtl" lang="ar">خربڨة و داما</strong>
+        / <strong>Kharbga &amp; Dama</strong> traite les données, affiche les annonces et protège les choix des utilisateurs.
+      </p>
+      <div class="meta-grid" aria-label="Informations principales">
+        <div class="meta-item">
+          <strong>Application</strong>
+          خربڨة و داما
+        </div>
+        <div class="meta-item">
+          <strong>Package</strong>
+          com.kharbga.dama.tn
+        </div>
+        <div class="meta-item">
+          <strong>Version document</strong>
+          1.0 - 27 juin 2026
+        </div>
+        <div class="meta-item">
+          <strong>Editeur</strong>
+          Emyyr
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav aria-label="Sommaire">
+        <h2>Sommaire</h2>
+        <a href="#resume">Résumé</a>
+        <a href="#responsable">Responsable</a>
+        <a href="#donnees">Données traitées</a>
+        <a href="#publicite">Publicités</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#partage">Partage</a>
+        <a href="#conservation">Conservation</a>
+        <a href="#securite">Sécurité</a>
+        <a href="#droits">Droits</a>
+        <a href="#enfants">Enfants</a>
+        <a href="#google-play">Google Play</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div>
+    
+
+        <section id="resume">
+          <h2>Résumé rapide</h2>
+          <p>
+            L'application est un jeu de plateau. Elle ne demande pas de compte utilisateur et ne collecte pas directement
+            d'e-mail, de numéro de téléphone, de contacts, de position GPS, de données de paiement ou de données de santé.
+          </p>
+          <div class="summary">
+            <div class="summary-card">
+              <strong>Données locales</strong>
+              Le nom du joueur, l'image de profil choisie, les réglages et la sauvegarde de partie sont stockés sur l'appareil.
+            </div>
+            <div class="summary-card">
+              <strong>Image de profil</strong>
+              L'application accède uniquement à l'image que l'utilisateur choisit depuis sa galerie.
+            </div>
+            <div class="summary-card">
+              <strong>Annonces</strong>
+              L'application utilise Google Mobile Ads / AdMob pour afficher des publicités.
+            </div>
+            <div class="summary-card">
+              <strong>Suppression</strong>
+              Les données locales peuvent être supprimées en réinitialisant le profil, en effaçant les données de l'application ou en désinstallant l'application.
+            </div>
+          </div>
+        </section>
+
+        <section id="responsable">
+          <h2>1. Responsable et portée</h2>
+          <p>
+            Cette politique s'applique à l'application Android <strong>خربڨة و داما</strong> / <strong>Kharbga &amp; Dama</strong>,
+            publiée sous le package <strong>com.kharbga.dama.tn</strong>.
+          </p>
+          <p>
+            Le responsable de publication indiqué pour cette version est <strong>Emyyr</strong>. Les fournisseurs tiers,
+            notamment Google pour les annonces, traitent certaines données selon leurs propres politiques.
+          </p>
+        </section>
+
+        <section id="donnees">
+          <h2>2. Données traitées par l'application</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Donnée</th>
+                  <th>Utilisation</th>
+                  <th>Stockage</th>
+                  <th>Partage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nom ou pseudo du joueur</td>
+                  <td>Afficher le profil du joueur dans l'application.</td>
+                  <td><span class="tag">Local appareil</span></td>
+                  <td>Non envoyé par l'application au développeur.</td>
+                </tr>
+                <tr>
+                  <td>Image de profil choisie depuis la galerie</td>
+                  <td>Personnaliser l'avatar du joueur.</td>
+                  <td><span class="tag">Local appareil</span></td>
+                  <td>Non envoyée par l'application au développeur.</td>
+                </tr>
+                <tr>
+                  <td>Réglages de jeu</td>
+                  <td>Conserver les préférences : son, musique, volume, vibration, thème, contraste, taille des pièces et tutoriel.</td>
+                  <td><span class="tag">Local appareil</span></td>
+                  <td>Non envoyés par l'application au développeur.</td>
+                </tr>
+                <tr>
+                  <td>Sauvegarde de partie</td>
+                  <td>Permettre à l'utilisateur de reprendre une partie commencée.</td>
+                  <td><span class="tag">Local appareil</span></td>
+                  <td>Non envoyée par l'application au développeur.</td>
+                </tr>
+                <tr>
+                  <td>Données techniques et publicitaires</td>
+                  <td>Afficher, mesurer et sécuriser les annonces publicitaires.</td>
+                  <td><span class="tag warn">Google / partenaires publicitaires</span></td>
+                  <td>Peuvent être collectées ou partagées par Google Mobile Ads selon les paramètres de l'utilisateur et les règles Google.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Données que l'application ne collecte pas directement</h3>
+          <ul>
+            <li>Aucun compte n'est requis pour jouer.</li>
+            <li>Aucune adresse e-mail ou numéro de téléphone n'est demandé par l'application.</li>
+            <li>Aucune position GPS précise n'est demandée.</li>
+            <li>Aucun contact, message privé, donnée de santé ou donnée de paiement n'est demandé.</li>
+            <li>L'application n'utilise pas le microphone et ne demande pas l'accès aux contacts.</li>
+          </ul>
+        </section>
+
+        <section id="publicite">
+          <h2>3. Publicités et Google Mobile Ads</h2>
+          <p>
+            L'application utilise le SDK <strong>Google Mobile Ads</strong> / <strong>AdMob</strong> pour afficher des publicités.
+            Google indique que ce SDK peut collecter et partager automatiquement certaines données pour la publicité,
+            l'analyse et la prévention de la fraude, notamment l'adresse IP, les interactions avec le produit,
+            des informations de diagnostic et des identifiants de l'appareil ou du compte, comme l'identifiant publicitaire Android.
+          </p>
+          <p>
+            L'adresse IP peut être utilisée par Google pour estimer une localisation générale. L'application ne demande pas
+            la permission de localisation GPS précise.
+          </p>
+          <p>
+            Les utilisateurs peuvent gérer ou réinitialiser leur identifiant publicitaire dans les paramètres Android et
+            gérer certains choix publicitaires dans les paramètres Google. Les annonces peuvent être personnalisées ou non
+            personnalisées selon les paramètres de l'appareil, les choix de consentement applicables et la disponibilité des services Google.
+          </p>
+          <p>
+            Pour en savoir plus :
+            <a href="https://policies.google.com/privacy" rel="noopener">Politique de confidentialité Google</a>,
+            <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">utilisation des données par Google dans les sites et applications partenaires</a>,
+            <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">déclaration de données Google Mobile Ads</a>.
+          </p>
+        </section>
+
+        <section id="permissions">
+          <h2>4. Permissions et accès de l'application</h2>
+          <ul>
+            <li><strong>Galerie / photos :</strong> utilisée uniquement quand l'utilisateur choisit une image de profil.</li>
+            <li><strong>Internet / réseau :</strong> utilisé par les services publicitaires et les composants nécessaires à l'affichage des annonces.</li>
+            <li><strong>Vibration :</strong> utilisée pour les retours tactiles du jeu si l'utilisateur active cette option.</li>
+            <li><strong>Texte traité par Android :</strong> certaines déclarations techniques peuvent être présentes pour la compatibilité Flutter/Android.</li>
+          </ul>
+        </section>
+
+        <section id="partage">
+          <h2>5. Partage des données</h2>
+          <p>
+            Le développeur ne reçoit pas directement les données locales de profil, de réglages ou de sauvegarde de partie.
+            Ces données restent sur l'appareil, sauf action volontaire de l'utilisateur hors de l'application.
+          </p>
+          <p>
+            Les données techniques liées aux annonces peuvent être traitées par Google, ses services publicitaires et, selon la configuration AdMob,
+            certains partenaires publicitaires. Ces traitements servent à afficher les annonces, mesurer leurs performances,
+            limiter la fraude et respecter les obligations légales applicables.
+          </p>
+          <p>
+            Des données peuvent aussi être divulguées si la loi l'exige ou pour protéger les droits, la sécurité et l'intégrité de l'application.
+          </p>
+        </section>
+
+        <section id="conservation">
+          <h2>6. Conservation et suppression</h2>
+          <ul>
+            <li>Les données locales restent sur l'appareil jusqu'à leur suppression par l'utilisateur, l'effacement des données de l'application ou la désinstallation.</li>
+            <li>La photo de profil peut être retirée depuis l'interface de profil de l'application.</li>
+            <li>La sauvegarde de partie peut être remplacée ou supprimée lorsque l'utilisateur recommence ou termine une partie selon les fonctions disponibles.</li>
+            <li>Les données publicitaires traitées par Google sont conservées selon les règles de Google et les choix du compte ou de l'appareil de l'utilisateur.</li>
+          </ul>
+        </section>
+
+        <section id="securite">
+          <h2>7. Sécurité</h2>
+          <p>
+            Les données de profil, de réglages et de sauvegarde sont conservées localement sur l'appareil via le stockage de préférences de l'application.
+            Il est conseillé aux utilisateurs de protéger leur appareil avec un verrouillage d'écran.
+          </p>
+          <p>
+            Google indique que les données collectées par le SDK Google Mobile Ads sont chiffrées en transit avec TLS.
+          </p>
+        </section>
+
+        <section id="droits">
+          <h2>8. Droits et choix des utilisateurs</h2>
+          <p>
+            Selon votre pays ou région, vous pouvez disposer de droits d'accès, de rectification, d'opposition ou de suppression
+            concernant vos données personnelles.
+          </p>
+          <ul>
+            <li>Pour les données locales : modifiez le profil, supprimez la photo, effacez les données de l'application ou désinstallez l'application.</li>
+            <li>Pour les annonces Google : utilisez les paramètres Android, les paramètres Google et les pages de confidentialité Google.</li>
+            <li>Pour une demande au développeur : utilisez l'adresse de contact indiquée plus bas.</li>
+          </ul>
+        </section>
+
+        <section id="enfants">
+          <h2>9. Enfants et public jeune</h2>
+          <p>
+            L'application est un jeu de plateau et ne demande pas volontairement de données de contact ou de compte personnel.
+            Si un parent ou tuteur pense qu'un enfant a fourni une donnée personnelle dans l'application, il peut supprimer les données locales
+            depuis l'appareil ou contacter le développeur.
+          </p>
+          <p>
+            Si l'application est déclarée comme destinée aux enfants dans Google Play Console, les paramètres publicitaires et la fiche
+            Google Play doivent respecter les règles Google Play applicables aux enfants et aux familles.
+          </p>
+        </section>
+
+        <section id="google-play">
+          <h2>10. Annexe pour Google Play Console</h2>
+          <p>
+            Cette section aide à garder la politique cohérente avec la fiche Google Play. Le développeur reste responsable
+            de vérifier la déclaration finale dans Play Console.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Point Google Play</th>
+                  <th>Déclaration recommandée à vérifier</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Données locales uniquement</td>
+                  <td>Nom de joueur, photo de profil, réglages et sauvegarde sont traités localement et ne sont pas envoyés au développeur.</td>
+                </tr>
+                <tr>
+                  <td>SDK publicitaire tiers</td>
+                  <td>Déclarer les données collectées ou partagées par Google Mobile Ads : IP, interactions, diagnostics, identifiants publicitaires/appareil selon la documentation Google.</td>
+                </tr>
+                <tr>
+                  <td>Chiffrement en transit</td>
+                  <td>Les données publicitaires Google Mobile Ads sont indiquées par Google comme chiffrées en transit avec TLS.</td>
+                </tr>
+                <tr>
+                  <td>Suppression des données</td>
+                  <td>Expliquer que les données locales peuvent être supprimées depuis l'appareil ou par désinstallation, et que les choix publicitaires passent par Google/Android.</td>
+                </tr>
+                <tr>
+                  <td>Politique publique</td>
+                  <td>Publier cette page sur une URL accessible sans connexion et reporter cette URL dans Play Console.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="modifications">
+          <h2>11. Modifications de cette politique</h2>
+          <p>
+            Cette politique peut être mise à jour si l'application ajoute de nouvelles fonctionnalités, de nouveaux SDK,
+            des achats, des comptes utilisateurs, des analyses ou d'autres types de traitement de données.
+            La date de mise à jour en haut de cette page indiquera la version en vigueur.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2>12. Contact</h2>
+          <p>
+            Pour toute question concernant cette politique ou les données personnelles liées à l'application :
+          </p>
+          <div class="contact-box">
+            <div>
+              <strong>Editeur</strong><br>
+              Emyyr
+            </div>
+            <div>
+              <strong>E-mail support</strong><br>
+              <a href="mailto:ghiamir5@gmail.com">ghiamir5@gmail.com</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="sources">
+          <h2>Sources et références</h2>
+          <ul>
+            <li><a href="https://support.google.com/googleplay/android-developer/answer/10787469" rel="noopener">Google Play - Data safety section</a></li>
+            <li><a href="https://support.google.com/googleplay/android-developer/answer/10144311" rel="noopener">Google Play - User Data policy</a></li>
+            <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener">Google Mobile Ads - Play data disclosure</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from partner sites and apps</a></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Politique de confidentialité de خربڨة و داما / Kharbga &amp; Dama - Dernière mise à jour : 27 juin 2026.
+    </footer>
+  </div>
+</body>
+</html>
